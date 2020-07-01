@@ -3,11 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Update '<title>'. -->
-    <title>Document</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- 'Connect' JS to this HTML file. -->
+    <h1>Registration form</h1>
+    <form>
+      <div>
+        <!-- For accessiblity, 'for' should match corresponding 'input id' -->
+        <label for="firstname"></label>
+        <input id="firstname" type="text" value="First Name" />
+      </div>
+
+      <div>
+        <label for="lastname"></label>
+        <input id="lastname" type="text" value="Last Name" />
+      </div>
+
+      <div>
+        <label for="password"></label>
+        <input id="password" type="password" value="Password" />
+      </div>
+
+      <div>
+        <label for="username"></label>
+        <input id="username" type="text" value="Username" />
+      </div>
+
+      <div>
+        <label for="email"></label>
+        <input id="email" type="email" value="Email" />
+      </div>
+
+      <div>
+        <label for="phone"></label>
+        <input id="phone" type="tel" maxlength="10" />
+        <span class="validity"></span>
+      </div>
+      <input type="submit" value="Submit" class="button" />
+    </form>
+
     <script src="./scripts.js"></script>
   </body>
 </html>
