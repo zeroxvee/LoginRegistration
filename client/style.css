@@ -1,4 +1,50 @@
+:root {
+  --primary-color: #FBEAFF;
+  --secondary-color: #0089BA;
+  --accent-color: #845EC2;
+}
+
 body {
+  font-size: 20px;
+  background-color: var(--secondary-color);
   font-family: 'Lato', sans-serif;
 }
 
+/* https://type-scale.com/?size=20&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false */
+h1 {
+  color: var(--primary-color);
+  font-size: 1.953em;
+  padding: 1rem;
+  text-align: center;
+}
+
+input {
+  color: var(--accent-color);
+  margin: 0.5rem;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+div:last-of-type {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  min-width: 3rem;
+  padding: 0.5rem;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+/* Classes */
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
